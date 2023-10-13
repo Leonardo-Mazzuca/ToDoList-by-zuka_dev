@@ -1,0 +1,358 @@
+.lista__container {
+  margin: 0 auto;
+  width: 60%;
+  padding: 2rem 3%;
+  background: #fff;
+  border-radius: 8px;
+  height: 20vh;
+  box-shadow: 1px 1px 4px rgba(255, 255, 255, 0.5);
+}
+.lista__container .lista__assets {
+  margin: 0 auto;
+}
+@media (max-width: 37.4375em) {
+  .lista__container {
+    width: 100%;
+  }
+}
+
+header {
+  position: fixed;
+  padding: 2rem 3%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+header h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+header .edit__span {
+  background: #008170;
+  padding: 1rem 2%;
+  border-radius: 10% 50%;
+}
+header .name__span {
+  font-size: 14px;
+  width: 150px;
+  line-height: -60px;
+}
+
+.tarefas__container {
+  background: #fff;
+  margin-top: 1rem;
+  width: 60%;
+  margin: 1rem;
+  height: auto;
+  border-radius: 4px;
+  padding: 1rem 3%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.tarefas__container h2 {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 16px;
+}
+.tarefas__container .tarefas__adicionadas {
+  width: 100%;
+}
+.tarefas__container .tarefas__adicionadas .tarefa__adicionada {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  width: 100%;
+  margin: 1rem 0;
+  background: #dedede;
+  gap: 1rem;
+}
+.tarefas__container .tarefas__adicionadas .tarefa__adicionada .tarefa__descricao {
+  border-radius: 2px;
+  padding: 0.3rem 0.5rem;
+  width: 95%;
+}
+.tarefas__container .tarefas__adicionadas .tarefa__adicionada .tarefa__descricao .tarefa__content {
+  font-size: 14px;
+  color: #323232;
+  font-weight: 500;
+}
+.tarefas__container .tarefas__adicionadas .tarefa__adicionada .tarefa__descricao .is-complete-icon {
+  display: none;
+}
+.tarefas__container .tarefas__adicionadas .tarefa__adicionada .tarefa__descricao .is-complete-icon.is-complete {
+  display: flex;
+}
+.tarefas__container .tarefas__adicionadas .tarefa__adicionada.is-complete {
+  text-decoration: line-through;
+  color: #656565;
+  background: #ebebeb;
+  transition: 0.6s ease-in-out;
+}
+@media (max-width: 37.4375em) {
+  .tarefas__container {
+    width: 100%;
+  }
+}
+
+.historico__container {
+  margin: 0 auto;
+  background: #fff;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  padding: 2rem 9%;
+}
+.historico__container h1 {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 34px;
+}
+.historico__container .historico__vazio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.historico__container .historico__vazio.is-not-empty {
+  display: none;
+}
+.historico__container .tarefa__in_historico {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  background: #dedede;
+  padding: 1rem;
+  border-radius: 4px;
+}
+.historico__container p span {
+  color: #008170;
+}
+
+.input__container {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+.input__container .input__box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+.input__container .input__box .input__asset {
+  display: flex;
+  margin: 0 auto;
+  gap: 0.2rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+.input__container .input__box .input__asset input {
+  border: transparent;
+  background: #dedede;
+  padding: 0.5rem;
+  border-radius: 4px;
+  width: 90%;
+}
+.input__container .input__box .input__asset input.on-error {
+  border: 1px solid #bf1054;
+}
+.input__container .input__box .input__asset button {
+  background: #323232;
+  width: 10%;
+  height: 32px;
+  padding: 0.5rem;
+  border: none;
+  color: #00b49c;
+  border-radius: 4px;
+  text-align: center;
+  transition: 0.6s ease-in-out;
+}
+.input__container .input__box .input__asset button:hover {
+  transform: scale(1.1);
+  transition: 0.6s ease-in-out;
+  background: #4b4b4b;
+}
+
+.tarefas__container {
+  background: #fff;
+  margin-top: 1rem;
+  width: 60%;
+  margin: 1rem;
+  height: auto;
+  border-radius: 4px;
+  padding: 1rem 3%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.tarefas__container h2 {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 16px;
+}
+.tarefas__container .tarefas__adicionadas {
+  width: 100%;
+}
+.tarefas__container .tarefas__adicionadas .tarefa__adicionada {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  width: 100%;
+  margin: 1rem 0;
+  background: #dedede;
+  gap: 1rem;
+}
+.tarefas__container .tarefas__adicionadas .tarefa__adicionada .tarefa__descricao {
+  border-radius: 2px;
+  padding: 0.3rem 0.5rem;
+  width: 95%;
+}
+.tarefas__container .tarefas__adicionadas .tarefa__adicionada .tarefa__descricao .tarefa__content {
+  font-size: 14px;
+  color: #323232;
+  font-weight: 500;
+}
+.tarefas__container .tarefas__adicionadas .tarefa__adicionada .tarefa__descricao .is-complete-icon {
+  display: none;
+}
+.tarefas__container .tarefas__adicionadas .tarefa__adicionada .tarefa__descricao .is-complete-icon.is-complete {
+  display: flex;
+}
+.tarefas__container .tarefas__adicionadas .tarefa__adicionada.is-complete {
+  text-decoration: line-through;
+  color: #656565;
+  background: #ebebeb;
+  transition: 0.6s ease-in-out;
+}
+@media (max-width: 37.4375em) {
+  .tarefas__container {
+    width: 100%;
+  }
+}
+
+.button__box {
+  display: flex;
+  gap: 0.3rem;
+}
+.button__box button {
+  background: #323232;
+  border: none;
+  height: 32px;
+  padding: 0.5rem;
+  color: #00b49c;
+  border-radius: 4px;
+  text-align: center;
+  transition: 0.6s ease-in-out;
+}
+.button__box button:nth-of-type(2) {
+  color: #bf1054;
+}
+.button__box button:nth-of-type(3) {
+  color: #ffbf00;
+}
+.button__box button:hover {
+  transform: scale(1.1);
+  transition: 0.6s ease-in-out;
+  background: #4b4b4b;
+}
+.button__box button.is-complete {
+  background: #7e7e7e;
+  pointer-events: none;
+}
+.button__box button.is-complete:hover {
+  transform: none;
+  transition: none;
+}
+
+.tarefa__vazia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.tarefa__vazia .tarefa__vazia_content {
+  text-align: center;
+  margin-top: 1rem;
+}
+.tarefa__vazia .tarefa__vazia_content span {
+  color: #008170;
+}
+.tarefa__vazia.tarefa-is-add {
+  display: none;
+}
+.tarefa__vazia.is-hidden {
+  display: none;
+}
+
+.mensagem__error {
+  position: absolute;
+  background: #ffbf00;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  padding: 0.5rem;
+  top: 20%;
+  border-radius: 4px;
+  color: #181818;
+  opacity: 0;
+  transition: 0.6s ease-in-out;
+}
+.mensagem__error.on-error {
+  visibility: visible;
+  opacity: 0.6;
+  transition: 0.6s ease-in-out;
+}
+
+.btn__historico {
+  color: #008170;
+  font-size: 22px;
+}
+.btn__historico i {
+  transition: 0.6s ease-in-out;
+}
+.btn__historico i:hover {
+  transform: scale(1.1);
+  transition: 0.6s ease-in-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #181818;
+  height: 100vh;
+  width: 100%;
+}
+
+.main__configure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #181818;
+  height: 100vh;
+  width: 100%;
+  padding: 2rem 9%;
+}/*# sourceMappingURL=index.css.map */

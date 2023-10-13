@@ -1,0 +1,43 @@
+$component-name : 'button__box';
+
+.#{$component-name}{
+    display: flex;
+    gap: 0.3rem;
+
+    button{
+        background: lighten($darkness,10);
+        border: none;
+        height: 32px;
+        padding: 0.5rem;
+        color: lighten($fog,10);
+        border-radius: $radius-4-px;
+        text-align: center;
+        transition: $transition-default;
+
+        &:nth-of-type(2){
+            color: lighten($strawberry,10);
+        }
+
+        &:nth-of-type(3){
+            color: $fall;
+        }
+
+        &:hover{
+            transform: scale(1.1);
+            transition: $transition-default;
+            background:lighten($darkness,20)
+        }
+
+
+        &.is-complete{
+            background: lighten($darkness,40);
+            pointer-events: none;
+
+            &:hover{
+                transform: none; 
+                transition: none;
+            }
+        }
+
+    }
+}

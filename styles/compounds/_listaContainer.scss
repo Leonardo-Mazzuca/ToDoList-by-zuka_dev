@@ -1,0 +1,24 @@
+$compound-name: 'lista__container';
+
+.#{$compound-name}{
+
+    margin: 0 auto;
+    width: 60%;
+    padding: 2rem 3%;
+    background: $white;
+    border-radius: $radius-8-px;
+    height: 20vh;
+    box-shadow: 1px 1px 4px rgba(255,255,255, .5);
+
+    .lista__assets{
+        margin: 0 auto;
+    }
+
+    @include breakpoint (small-only){
+        width: 100%;
+    }
+
+ 
+
+
+}

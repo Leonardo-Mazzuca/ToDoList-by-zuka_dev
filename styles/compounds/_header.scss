@@ -1,0 +1,36 @@
+header{
+    position: fixed;
+    padding: 2rem 3%;
+  
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    a{
+        text-decoration: none;
+        color: $white;
+        
+    }
+
+    h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .edit__span{
+        background: $fog;
+        padding: 1rem 2%;
+        border-radius: 10% 50%;
+    }
+
+
+    .name__span{
+        font-size: $fs-minus; 
+        width: 150px; 
+        line-height: -60px;
+    }
+
+    
+}

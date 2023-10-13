@@ -1,0 +1,17 @@
+$component-name : 'btn__historico';
+
+.#{$component-name} {
+
+
+    color: $fog;
+    font-size: $fs-high;
+
+
+    i{
+        transition: $transition-default;
+        &:hover{
+            transform: scale(1.1);
+            transition: $transition-default;
+        }
+    }
+}

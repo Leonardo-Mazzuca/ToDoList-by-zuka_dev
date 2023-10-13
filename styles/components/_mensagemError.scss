@@ -1,0 +1,22 @@
+$component-name: 'mensagem__error';
+
+.#{$component-name}{
+    position: absolute;
+    background: $fall;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    padding: 0.5rem;
+    top: 20%;
+    border-radius: $radius-4-px;
+    color: $darkness;
+    opacity: 0;
+    transition: $transition-default;
+
+    &.on-error{
+        visibility: visible;
+        opacity: 0.6;
+        transition: $transition-default;
+    }
+
+}

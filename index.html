@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List - By Mazzuca</title>
+
+    <link rel="stylesheet" href="./styles/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <header>
+        <a href="/">
+            <h1><span class="edit__span">ToDo</span> List <span class="name__span">By - @zuka_dev</span></h1>
+        </a>
+
+
+        <div>
+            <a class="btn__historico" id="direcionar-historico">
+                <i class="fa-solid fa-boxes-packing"></i>
+            </a>
+        </div>
+
+    </header>  
+
+
+    <main>
+
+        <section class="lista__container">
+
+
+            <article class="lista__assets">
+                <div class="input__container">
+                    
+                    <div class="input__box">
+                        <label for="add-tarefa">Adicionar Tarefa</label>
+                        <div class="input__asset">
+    
+                            <input type="text"
+                            id="add-tarefa"
+                            name="add-tarefa"
+                            placeholder="Levar meu cachorro para passear...">
+                            <button class="btn__adicionar">
+                                <i class="fa-solid fa-circle-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </article>
+        </section>
+
+        <section class="tarefas__container">
+            <h2>
+                Tarefas Adicionadas
+            </h2>
+
+            <div class="tarefa__vazia">
+
+                <figure>
+                    <img src="./assets/sleep.png" alt="Imagem de uma prancheta dormindo">
+                </figure>
+
+                <p class="tarefa__vazia_content">
+                    Nada aqui por enquanto, que tal criar uma nova <span>tarefa</span>?
+                </p>
+
+            </div>
+
+            <div class="tarefas__adicionadas">
+
+            </div>
+
+        </section>
+
+
+        <div class="mensagem__error">
+           <p>
+            Digite algo no campo!!
+           </p>
+        </div>
+    </main>
+
+    
+
+    <footer>
+
+    </footer>
+
+
+    <script type="text/javascript" src="./js/utilidade.js"></script>
+    <script type="text/javascript" src="./js/lista.js"></script>
+</body>
+</html>

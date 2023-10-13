@@ -1,0 +1,47 @@
+$compound-name : 'historico__container';
+
+.#{$compound-name} {
+
+    margin: 0 auto;
+    background: $white;
+    width: 100%;
+    height: auto;
+    border-radius: $radius-4-px;
+    padding: 2rem 9%;
+
+    h1{
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        font-size: $fs-ultra;
+    }
+
+    .historico__vazio{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 1rem;
+
+        &.is-not-empty{
+            display: none;
+        }
+    }
+
+    .tarefa__in_historico{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2rem;
+        background: $smoke;
+        padding: 1rem;
+        border-radius: $radius-4-px;
+    }
+
+    p{
+        span{
+            color: $fog;
+        }
+    }
+
+}

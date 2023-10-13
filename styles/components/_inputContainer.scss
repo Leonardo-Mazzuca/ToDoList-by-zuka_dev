@@ -1,0 +1,66 @@
+$component-name : 'input__container';
+
+.#{$component-name}{
+
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 1rem;
+
+
+    .input__box{
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 100%;
+
+
+        .input__asset{
+            display: flex;
+            margin: 0 auto;
+            gap: 0.2rem;
+            width: 100%;
+            margin-top: 1rem;
+            
+            input{
+                border: transparent;
+                background: #dedede;
+                padding: 0.5rem;
+                border-radius: 4px;
+                width: 90%;
+
+                &.on-error{
+                    border: 1px solid lighten($strawberry,10);
+                }
+
+    
+            }
+    
+    
+            button{
+                background: lighten($darkness,10);
+                width: 10%;
+                height: 32px;
+                padding: 0.5rem;
+                border: none;
+                color: lighten($fog,10);
+                border-radius: $radius-4-px;
+                text-align: center;
+                transition: $transition-default;
+
+                &:hover{
+                    transform: scale(1.1);
+                    transition: $transition-default;
+                    background:lighten($darkness,20)
+                }
+        
+            }
+        }
+
+    }
+
+    
+
+
+}

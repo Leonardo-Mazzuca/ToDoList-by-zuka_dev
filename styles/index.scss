@@ -1,0 +1,57 @@
+//====================== abstract ======================
+@import './abstract/backgrounds';
+@import './abstract/variables';
+@import './abstract/breakpoints';
+
+//====================== abstract ======================
+
+//================ compounds ================
+@import './compounds/listaContainer';
+@import './compounds/header';
+@import './compounds/tarefasContainer';
+@import './compounds/historicoContainer';
+
+
+//================ compounds ================
+
+//================ components ================
+
+@import './components/inputContainer';
+@import './compounds/tarefasContainer';
+@import './components/buttonBox';
+@import './components/tarefaVazia';
+@import './components/mensagemError';
+@import './components/btnHistorico';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $roboto-font;
+}
+
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $darkness;
+    height: 100vh;
+    width: 100%;
+}
+
+.main__configure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $darkness;
+    height: 100vh;
+    width: 100%;
+    padding: 2rem 9%;
+}
+
+
+

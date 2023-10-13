@@ -1,0 +1,29 @@
+$component-name: 'tarefa__vazia';
+
+.#{$component-name}{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+
+    .tarefa__vazia_content{
+        text-align: center;
+        margin-top: 1rem;
+
+        span{
+            color: $fog;
+        }
+    }
+
+    &.tarefa-is-add{
+        display: none;
+    }
+
+    &.is-hidden{
+        display: none;
+    }
+
+
+
+}

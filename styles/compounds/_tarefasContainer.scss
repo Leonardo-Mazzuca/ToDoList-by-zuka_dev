@@ -1,0 +1,83 @@
+$compound-name: 'tarefas__container';
+
+.#{$compound-name}{
+
+    background: $white;
+    margin-top: 1rem;
+    width: 60%;
+    margin: 1rem;
+    height: auto;
+    border-radius: $radius-4-px;
+    padding: 1rem 3%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    
+
+
+
+    h2{
+        margin-bottom: 1rem;
+        font-weight: 500;
+        font-size: $fs-default;
+    }
+
+    .tarefas__adicionadas{
+        width: 100%;
+        
+            .tarefa__adicionada{
+                display: flex;
+                align-items: center;
+                gap: 0.3rem;
+                width: 100%;
+                margin: 1rem 0;
+                background: $smoke;
+                gap: 1rem;
+                
+        
+                .tarefa__descricao{
+                 
+                    border-radius: 2px;
+                    padding: 0.3rem 0.5rem;
+                    width: 95%;
+                    
+            
+                    .tarefa__content{
+                        font-size: $fs-minus;
+                        color: lighten($darkness,10);
+                        font-weight: 500;
+                       
+                    }
+        
+                    .is-complete-icon{
+                        display: none;
+        
+                        &.is-complete{
+                            display: flex;
+                        }
+                    }
+            
+                }
+        
+                &.is-complete{
+                    text-decoration: line-through;
+                    color: lighten($darkness, 30);
+                    background: lighten($smoke, 5);
+                    transition: $transition-default;
+                }
+        
+            }
+
+    }
+
+    @include breakpoint (small-only){
+        width: 100%;
+    }
+   
+
+    
+
+
+}
